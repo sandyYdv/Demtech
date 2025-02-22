@@ -34,7 +34,7 @@ export const config: Config<Props> = {
         fields: {
           type: "custom",
           render: ({ value, onChange }) => {
-            const [fields, setFields] = useState<FormField[]>(value ?? []); // ✅ Default to empty array
+            const [fields, setFields] = useState<FormField[]>(value ?? []);
 
             const addField = () => {
               const newField: FormField = {
