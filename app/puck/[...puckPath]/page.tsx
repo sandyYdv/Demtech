@@ -28,6 +28,9 @@ export async function generateMetadata({
     title: "Puck: " + path,
   };
 }
+export function generateStaticParams() {
+  return [];
+}
 
 export default async function Page({
   params,

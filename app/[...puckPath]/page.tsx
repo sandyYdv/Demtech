@@ -27,7 +27,9 @@ export async function generateMetadata({
     title: getPage(path)?.root.props?.title,
   };
 }
-
+export function generateStaticParams() {
+  return []; // No pre-generated static paths
+}
 export default async function Page({
   params,
 }: {
